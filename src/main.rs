@@ -1,8 +1,8 @@
 use url::Url;
-use std::error::Error;
-use linkify::{LinkFinder, LinkKind};
-use serenity::cache::{Cache, Settings};
-use std::sync::Arc;
+
+use linkify::{LinkFinder};
+
+
 
 static SITES: [&str; 4] = ["www.reddit.com", "discord.com", "www.youtube.com", "discord.gift"];
 
