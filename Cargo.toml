@@ -1,0 +1,12 @@
+[package]
+name = "antiphish"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+url = "*"
+serenity = { verson = "0.10.10", default-features = false, features = ["client", "gateway", "rustls_backend", "model", "utils", "cache"] }
+tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
+linkify = "0.8.0"
